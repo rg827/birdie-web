@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Birdie</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/birdie.css" />
+</head>
+
+<body>
+
+
+<!-- logged out view -->
+<div class="sign-in">
+	<h1>Birdie</h1>
+	<h2>Your intelligent clothing match maker.</h2>
+	<button class="submit" id="sign-in-button">Sign In</button>
+</div>
+<!-- end logged out view -->
+
+
+<div class="dashboard hidden">
+
+	<!-- header -->
+	<header>
+		<section class="container">
+			<a href="#"><h1>Birdie</h1></a>
+			<nav>
+				<ul><p class="light" id="logout">Logout</p></ul>
+				<section id="profile" class="">
+					<div class="profile-image"></div>
+				</section>
+			</nav>
+			<div class="clearfix"></div>
+		</section>
+	</header>
+	<!-- end header -->
+
+
+    <!-- image link input area -->   
+	<section class="content" id="img_upload_area">
+		<div>
+			<span class="input input--birdie">
+				<input class="input__field input__field--birdie" type="text" id="imgurl" />
+				<label class="input__label input__label--birdie input__label--birdie-color-1" for="imgurl">
+					<span class="input__label-content input__label-content--birdie">Paste an image link</span>
+				</label>
+			</span>
+		</div>
+		
+		<button class="submit" id="imgurl_submit">Go Birdie!</button>
+	</section>
+	<!-- end image link input area -->  
+
+
+	<!-- helper tag selection area --> 
+	<select id="dropdown" class="hidden">
+		<option value="-1" selected>Choose a helper</option>
+		<option value="1">strapless</option>
+		<option value="2">one shoulder</option>
+		<option value="3">shortsleeve</option>
+		<option value="4">sleeveless</option>
+		<option value="5">longsleeve</option>
+		<option value="6">gown</option>
+		<option value="7">plaid</option>
+		<option value="8">bow</option>
+		<option value="9">midi dress</option>
+		<option value="10">asymmetric</option>
+		<option value="10">floral</option>
+	</select>
+	<!-- end helper tag selection area --> 
+
+
+	<!-- results area --> 
+	<div class="flex-container">		
+		<div class="uploaded-flex-item hidden" id="uploaded-image-card"></div>
+		<div class="match-flex-item hidden" id="product-match-card"></div>
+	</div>			
+	<!-- end results area -->
+
+	<script type="text/javascript" src="keys.js"></script>	
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
