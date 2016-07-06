@@ -8,6 +8,7 @@ Learnings:
 
 
 Technical Hurdles:
+
  (1) Comparing data structures for like data (solution: used Underscore.JS for the first time)
 
  (2) Getting a user's selection from a drop down
